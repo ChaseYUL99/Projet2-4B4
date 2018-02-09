@@ -1,0 +1,7 @@
+Normes de programmation :
+
+- Retour de ligne entre les différentes classes et méthodes.
+- Accolade sur la même ligne que la déclaration de la classe ou méthode.
+- Tabulation après une accolade jusqu'à la suivante.
+- Espaces dans les parenthèse
+- Formatter avec le formatter "EclipseFormatageMontmorencyH2017"

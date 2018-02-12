@@ -5,6 +5,12 @@ public class Plat {
 	private String nom;
 	private double prix;
 
+	public Plat( String nom ) {
+
+		this( nom, -1 );
+
+	}
+
 	public Plat( String nom, double prix ) {
 
 		this.setNom( nom );

@@ -22,34 +22,5 @@ public class Commande {
 	public Plat getPlat() {
 		return plat;
 	}
-	
-	@Override
-	public boolean equals( Object autreObjet ) {
-		
-		boolean egalite = false;
-		
-		if ( this == autreObjet ) {
-			
-			egalite = true;
-			
-		} else if ( autreObjet != null ) {
-			
-			if ( autreObjet instanceof Commande ) {
-				
-				Commande autreCommande = (Commande) autreObjet;
-				
-				if ( this.getNom().equalsIgnoreCase( autreCommande.getNom() ) ) {
-					
-					egalite = true;
-					
-				}
-				
-			}
-			
-		}
-		
-		return egalite;
-		
-	}
 
 }

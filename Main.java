@@ -6,6 +6,8 @@ public class Main {
 
 		new Facture();
 
+		System.out.println( "\nFin du programme" );
+
 	}
 
 }

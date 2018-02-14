@@ -43,4 +43,33 @@ public class Plat {
 
 	}
 
+	@Override
+	public boolean equals( Object autreObjet ) {
+
+		boolean egalite = false;
+
+		if ( this == autreObjet ) {
+
+			egalite = true;
+
+		} else if ( autreObjet != null ) {
+
+			if ( autreObjet instanceof Plat ) {
+
+				Plat autrePlat = (Plat) autreObjet;
+
+				if ( this.getNom().equalsIgnoreCase( autrePlat.getNom() ) ) {
+
+					egalite = true;
+
+				}
+
+			}
+
+		}
+
+		return egalite;
+
+	}
+
 }

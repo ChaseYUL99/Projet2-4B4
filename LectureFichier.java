@@ -80,61 +80,61 @@ public class LectureFichier {
 			System.out.println( "\nUne erreur empèche la lecture du fichier" );
 
 		}
-		
+
 		for ( Commande commande : tabCommandes ) {
-			
+
 			boolean clientCorrespond = false;
-			
+
 			for ( String client : tabClients ) {
-				
+
 				if ( commande.getNom().equals( client ) ) {
-					
+
 					clientCorrespond = true;
-					
+
 					break;
-					
+
 				}
-				
+
 			}
-			
+
 			if ( !clientCorrespond ) {
-				
+
 				commandesValide = false;
-				
+
 				break;
-				
+
 			}
-			
+
 		}
-		
+
 		if ( commandesValide ) {
-			
+
 			for ( Commande commande : tabCommandes ) {
-				
+
 				boolean PlatCorrespond = false;
-				
+
 				for ( Plat plat : tabPlats ) {
-					
+
 					if ( commande.getPlat().equals( plat ) ) {
-						
+
 						PlatCorrespond = true;
-						
+
 						break;
-						
+
 					}
-					
+
 				}
-				
+
 				if ( !PlatCorrespond ) {
-					
+
 					commandesValide = false;
-					
+
 					break;
-					
+
 				}
-				
+
 			}
-			
+
 		}
 
 		try {
@@ -148,17 +148,29 @@ public class LectureFichier {
 		}
 
 	}
-	
-	public ArrayList<Commande> getTabCommandes() {
-		
-		return tabCommandes;
-		
+
+	public ArrayList<String> getTabClient() {
+
+		return tabClients;
+
 	}
-	
+
+	public ArrayList<Plat> getTabPlats() {
+
+		return tabPlats;
+
+	}
+
+	public ArrayList<Commande> getTabCommandes() {
+
+		return tabCommandes;
+
+	}
+
 	public boolean isCommandesValide() {
-		
+
 		return commandesValide;
-		
+
 	}
 
 }
